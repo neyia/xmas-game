@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Xmas Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+
+        <div class="content">
+            <h1 class="content__title">Xmas Game. Test Js</h1>
+
+            <div class="container">
+                <div class="panel">
+
+                    <div class="dices">
+                        <div id="dice-1" class="dices-item">
+                            <div class="dices-face" id="dices-face-1">
+                                <img class="dice" src="./icons/dice-1.jpg" alt="Dice number one"/>
+                            </div>
+                            <div class="dices-face" id="dices-face-2">
+                                <img class="dice" src="./icons/dice-2.jpg" alt="Dice number two"/>
+                            </div>
+                            <div class="dices-face" id="dices-face-3">
+                                <img class="dice" src="./icons/dice-3.jpg" alt="Dice number three"/>
+                            </div>
+                            <div class="dices-face" id="dices-face-4">
+                                <img class="dice" src="./icons/dice-4.jpg" alt="Dice number four"/>
+                            </div>
+                            <div class="dices-face" id="dices-face-5">
+                                <img class="dice" src="./icons/dice-5.jpg" alt="Dice number five"/>
+                            </div>
+                            <div class="dices-face" id="dices-face-6">
+                                <img class="dice" src="./icons/dice-6.jpg" alt="Dice number six"/>
+                            </div>
+                        </div>
+
+                        <!--<img id="dice-1" class="dice" src="./icons/dice-1.jpg" alt="Dice number one"/>
+                        <img id="dice-2" class="dice" src="./icons/dice-5.jpg" alt="Dice number two"/>-->
+                    </div>
+
+                    <div class="final-block">
+                        <span class="final-block__text">Insert the number to play (max 4)</span>
+                        <input type="number" id="final-score"
+                               class="control-input" placeholder="Final score" value="100"/>
+                               <!--onKeyPress="if(this.value.length === 4 && this.value > 0){return false;
+}"/>-->
+                    </div>
+
+                    <article id="player-0" class="player player--active">
+                        <h2 id="name-0" class="player__name">Player 0</h2>
+                        <p id="score-0" class="player__score">1</p>
+                        <div class="player-box">
+                            <p class="player-box__label">Current</p>
+                            <span id="current-0" class="player-box__score">0</span>
+                        </div>
+                    </article>
+
+                    <article id="player-1" class="player player--last player--winner">
+                        <h2 id="name-1" class="player__name">Player 1</h2>
+                        <p id="score-1" class="player__score">0</p>
+                        <div class="player-box">
+                            <p class="player-box__label">Current</p>
+                            <span id="current-1" class="player-box__score">2</span>
+                        </div>
+                    </article>
+
+                    <div class="control">
+                        <button type="button" id="btn-new" class="control-btn">
+                            New game
+                        </button>
+                        <button type="button" id="btn-roll" class="control-btn">
+                            Roll dice
+                        </button>
+                        <button type="button" id="btn-hold" class="control-btn">
+                            Hold
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="main.js"></script>
+    </body>
+</html>

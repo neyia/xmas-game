@@ -143,7 +143,6 @@ function init() {
     panelOne.classList.remove(PLAYERWINNER);
     panelTwo.classList.remove(PLAYERWINNER);
     dicesFace.classList.remove(DICEACTIVE);
-
 }
 
 btnNewGame.addEventListener('click', init);

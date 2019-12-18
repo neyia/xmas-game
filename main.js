@@ -81,8 +81,7 @@ btnRoll.addEventListener('click', function () {
         }
         superDice = dice;
     }
-})
-;
+});
 
 btnHold.addEventListener('click', function () {
     if (gamePlaying) {
@@ -148,3 +147,46 @@ function init() {
 }
 
 btnNewGame.addEventListener('click', init);
+
+
+var snowflake = document.querySelector('.snowflake--2');
+var monkey = document.querySelector('.dancing-monkey');
+
+snowflake.addEventListener('click', function () {
+    monkey.style.visibility = 'visible';
+    var pos = 30;
+    var id = setInterval(frame, 20);
+
+    function frame() {
+        if (pos === 70) {
+            clearInterval(id);
+        } else {
+            pos++;
+            monkey.style.top = pos + '%';
+            monkey.style.right = '4%';
+        }
+    }
+});
+
+monkey.addEventListener('click', function () {
+    var pos = 30;
+    var id = setInterval(frame, 20);
+
+    function frame() {
+        if (pos === 70) {
+            clearInterval(id);
+        } else {
+            pos++;
+            monkey.style.top = 'auto';
+            monkey.style.bottom = pos + '%';
+            monkey.style.right = '4%';
+        }
+    }
+
+
+    setTimeout(function(){
+        monkey.style.visibility = 'hidden';
+    }, 1500);
+
+
+});

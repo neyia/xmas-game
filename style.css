@@ -9,7 +9,7 @@ html, body, h1, h2, p {
 }
 
 html {
-    background-color: #bee6e8;
+    background-color: #ffffff;
     min-height: 600px;
     min-width: 480px;
     font-size: 16px;
@@ -20,6 +20,56 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     min-height: 100%;
     height: 100vh;
+}
+
+.content {
+
+}
+
+.snowflake {
+    background-size: cover;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+.snowflake--1 {
+    transition: all 1s ease 0s;
+    left: 5%;
+    top: 8%;
+}
+
+.snowflake--1:hover{
+    transition: all 1s ease 0s;
+    left: 6%;
+    top: 7%;
+}
+
+.snowflake--2 {
+    transition: all 1s ease 0s;
+    right: 22%;
+    left: auto;
+    top: 55%;
+}
+
+.snowflake--2:hover{
+    transition: all 1s ease 0s;
+    right: 23%;
+    top: 54%;
+}
+
+
+.snowflake--3 {
+    transition: all 1s ease 0s;
+    right: 10%;
+    left: auto;
+    top: 20%;
+}
+
+.snowflake--3:hover{
+    transition: all 1s ease 0s;
+    right: 9%;
+    top: 19%;
 }
 
 .content__title {
@@ -71,7 +121,7 @@ body {
     width: 130px;
 }
 
-.control-input--error{
+.control-input--error {
     border-color: #ff7e68;
 }
 
@@ -89,7 +139,7 @@ body {
 .panel {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background-color: #ffffff;
+    background-color: #bee6e8;
     position: relative;
     height: 480px;
     display: grid;
@@ -152,11 +202,11 @@ body {
 }
 
 .player-box {
-    background-color: #bee6e8;
+    background-color: #01afb0;
     text-align: center;
     padding: 15px 5px;
     font-weight: 400;
-    color: #000000;
+    color: #ffffff;
 }
 
 .player-box__label {
@@ -169,7 +219,7 @@ body {
     font-weight: 400;
     font-size: 24px;
     max-width: 52px;
-    color: #007172;
+    color: #ffffff;
 
     text-overflow: ellipsis;
     display: inline-block;
@@ -250,4 +300,17 @@ body {
 
 .dices-item .dices-face--active {
     transform: rotateY(0deg) translateZ(50px) !important;
+}
+
+
+.dancing-monkey{
+    background-image: url("./icons/monkey.gif");
+    background-size: cover;
+    position: absolute;
+    visibility: hidden;
+    height: 100px;
+    width: 100px;
+    left: auto;
+    right: 4%;
+    top: 30%;
 }
